@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f4f4f4; }
+.form-container, #examContainer { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+.hidden { display: none; }
+input { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+button:hover { background: #0056b3; }
+#timer { font-size: 24px; font-weight: bold; color: #dc3545; margin-bottom: 20px; }
+.question { margin: 20px 0; padding: 15px; background: #e9ecef; border-radius: 5px; }
+.options label { display: block; margin: 5px 0; }
+#result { margin-top: 20px; font-size: 18px; padding: 20px; }
