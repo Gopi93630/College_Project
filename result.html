@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Result | TNPSC Online Examination System</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+}
+
+header{
+background:#0a3d62;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+.container{
+width:60%;
+margin:auto;
+margin-top:50px;
+}
+
+.result-box{
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.result-box h2{
+color:#0a3d62;
+margin-bottom:20px;
+}
+
+.score{
+font-size:28px;
+font-weight:bold;
+margin:20px 0;
+}
+
+.status{
+font-size:22px;
+margin:15px 0;
+}
+
+.pass{
+color:green;
+font-weight:bold;
+}
+
+.fail{
+color:red;
+font-weight:bold;
+}
+
+.analysis{
+margin-top:20px;
+text-align:left;
+}
+
+.analysis ul{
+line-height:1.8;
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+background:#0a3d62;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#07406b;
+}
+
+footer{
+background:#0a3d62;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>
+<img src="images/icons/result.png" width="25">
+Exam Result
+</h2>
+</header>
+
+<div class="container">
+
+<div class="result-box">
+
+<h2>Your Exam Result</h2>
+
+<div class="score" id="scoreDisplay">
+Score: 0 / 3
+</div>
+
+<div class="status" id="statusDisplay">
+Status: Waiting
+</div>
+
+<div class="analysis">
+
+<h3>Performance Analysis</h3>
+
+<ul>
+<li>Strong understanding of basic general knowledge topics.</li>
+<li>Good attempt in TNPSC model questions.</li>
+<li>Need more practice in time management.</li>
+<li>Revise history, polity, and geography sections.</li>
+</ul>
+
+</div>
+
+<button onclick="goHome()">Back to Home</button>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 TNPSC Online Examination System</p>
+</footer>
+
+<script>
+
+let score = localStorage.getItem("score");
+let total = localStorage.getItem("total");
+
+if(score !== null){
+
+document.getElementById("scoreDisplay").innerHTML =
+"Score: " + score + " / " + total;
+
+if(score >= total/2){
+document.getElementById("statusDisplay").innerHTML =
+"Status: PASS";
+document.getElementById("statusDisplay").classList.add("pass");
+}else{
+document.getElementById("statusDisplay").innerHTML =
+"Status: FAIL";
+document.getElementById("statusDisplay").classList.add("fail");
+}
+
+}
+
+function goHome(){
+window.location.href = "index.html";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TNPSC Mock Test</title>
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f6f9;
+}
+
+header{
+background:#0a3d62;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+.container{
+width:80%;
+margin:auto;
+margin-top:30px;
+}
+
+.timer{
+float:right;
+font-size:18px;
+font-weight:bold;
+color:red;
+}
+
+.question-box{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:6px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.options{
+margin-top:10px;
+}
+
+.options label{
+display:block;
+margin:5px 0;
+}
+
+button{
+padding:12px 25px;
+background:#0a3d62;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#07406b;
+}
+
+.result{
+font-size:20px;
+font-weight:bold;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>
+<img src="images/icons/exam.png" width="25">
+TNPSC Mock Test
+</h2>
+<div class="timer">Time Left: <span id="time">60</span> sec</div>
+</header>
+
+<div class="container">
+
+<form id="quizForm">
+
+<div class="question-box">
+<p>1. Who is the Chief Minister of Tamil Nadu?</p>
+
+<div class="options">
+<label><input type="radio" name="q1" value="0"> Narendra Modi</label>
+<label><input type="radio" name="q1" value="1"> M.K. Stalin</label>
+<label><input type="radio" name="q1" value="0"> Rahul Gandhi</label>
+<label><input type="radio" name="q1" value="0"> Amit Shah</label>
+</div>
+
+</div>
+
+
+<div class="question-box">
+<p>2. Which river is the longest in India?</p>
+
+<div class="options">
+<label><input type="radio" name="q2" value="0"> Yamuna</label>
+<label><input type="radio" name="q2" value="1"> Ganga</label>
+<label><input type="radio" name="q2" value="0"> Godavari</label>
+<label><input type="radio" name="q2" value="0"> Kaveri</label>
+</div>
+
+</div>
+
+
+<div class="question-box">
+<p>3. Who is known as the Father of the Nation in India?</p>
+
+<div class="options">
+<label><input type="radio" name="q3" value="1"> Mahatma Gandhi</label>
+<label><input type="radio" name="q3" value="0"> Jawaharlal Nehru</label>
+<label><input type="radio" name="q3" value="0"> Subash Chandra Bose</label>
+<label><input type="radio" name="q3" value="0"> B.R Ambedkar</label>
+</div>
+
+</div>
+
+
+<button type="button" onclick="submitQuiz()">Submit Test</button>
+
+</form>
+
+<div id="result" class="result"></div>
+
+</div>
+</body>
+</html>

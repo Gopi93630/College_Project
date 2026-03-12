@@ -1,86 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TNPSC Prep Platform</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNPSC Online Examination System</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- Navbar -->
 <header>
-<nav class="navbar">
-<h2 class="logo">TNPSC Prep</h2>
+<div class="container">
+<nav>
 
-<ul class="nav-links">
-<li><a href="#">Home</a></li>
-<li><a href="#">Mock Tests</a></li>
-<li><a href="#">Subjects</a></li>
-<li><a href="#">Analytics</a></li>
+<img src="images/logo.png" alt="TNPSC Logo" width="120">
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="#">Mock Test</a></li>
+<li><a href="#">About</a></li>
 </ul>
 
-<button class="login-btn" onclick="login()">Login</button>
 </nav>
+</div>
 </header>
 
 
-<!-- Hero Section -->
 <section class="hero">
 
-<h1>Master the TNPSC Exams</h1>
+<div>
+<h1>TNPSC Online Examination System</h1>
+<p>Practice Mock Tests and Improve Your TNPSC Exam Preparation</p>
 
-<p>
-Prepare smarter with mock tests, subject practice and performance analytics.
-</p>
+<a href="login.html" class="btn">Start Practice Test</a>
 
-<button class="start-btn">Start Preparation</button>
+</div>
 
 </section>
 
 
-<!-- Features -->
 <section class="features">
 
-<div class="card">
-<h3>Timed Mock Tests</h3>
-<p>Simulate real TNPSC exam conditions with countdown timers.</p>
-</div>
+<div class="container">
+
+<h2 style="text-align:center;margin-bottom:40px;">Platform Features</h2>
+
+<div class="feature-grid">
 
 <div class="card">
-<h3>Subject Practice</h3>
-<p>Practice subject-wise questions for deeper understanding.</p>
-</div>
-
-<div class="card">
-<h3>Performance Analytics</h3>
-<p>Track your progress with detailed performance reports.</p>
-</div>
-
-</section>
-
-
-<!-- Dashboard Preview -->
-<section class="dashboard">
-
-<h2>Your Exam Dashboard</h2>
-
-<div class="stats">
-
-<div class="stat-box">
 <h3>Mock Tests</h3>
-<p>24 Completed</p>
+<p>Practice TNPSC model questions with online mock examinations.</p>
 </div>
 
-<div class="stat-box">
-<h3>Accuracy</h3>
-<p>82%</p>
+<div class="card">
+<h3>Instant Results</h3>
+<p>Get your score immediately after completing the test.</p>
 </div>
 
-<div class="stat-box">
-<h3>Rank</h3>
-<p>Top 15%</p>
+<div class="card">
+<h3>Subject-wise Practice</h3>
+<p>Prepare for History, Geography, Polity, and Aptitude topics.</p>
+</div>
+
+<div class="card">
+<h3>Time Management</h3>
+<p>Improve speed and accuracy with timed examinations.</p>
+</div>
+
 </div>
 
 </div>
@@ -88,12 +76,13 @@ Prepare smarter with mock tests, subject practice and performance analytics.
 </section>
 
 
-<!-- Footer -->
 <footer>
-<p>© 2026 TNPSC Exam Prep Platform</p>
+
+<p>© 2026 TNPSC Online Examination System | Developed for Educational Purpose</p>
+
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
