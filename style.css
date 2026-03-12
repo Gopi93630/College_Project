@@ -46,15 +46,14 @@ color:#fbc531;
 /* Hero Section */
 
 .hero{
-background:url("../images/background.jpg");
-background-size:cover;
-background-position:center;
-height:400px;
+background:#1e3c72;
+color:white;
+height:350px;
 display:flex;
 justify-content:center;
 align-items:center;
-color:white;
 text-align:center;
+flex-direction:column;
 }
 
 .hero h1{

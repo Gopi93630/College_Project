@@ -3,23 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNPSC Online Examination System</title>
+    <title>TNPSC Exam Portal</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:#f4f6f9;
+        }
+
+        header{
+            background:#0a3d62;
+            color:white;
+            padding:15px 0;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            color:#fbc531;
+        }
+
+        .hero{
+            background:url("images/images/background.jpg");
+            background-size:cover;
+            background-position:center;
+            height:400px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+        }
+
+        .hero h1{
+            font-size:40px;
+        }
+
+        .hero p{
+            font-size:18px;
+            margin-top:10px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:#fbc531;
+            color:black;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        .btn:hover{
+            background:#e1a800;
+        }
+
+        .features{
+            padding:50px 0;
+            background:white;
+        }
+
+        .feature-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+        }
+
+        .card{
+            background:#f4f6f9;
+            padding:25px;
+            border-radius:8px;
+            text-align:center;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card h3{
+            color:#0a3d62;
+        }
+
+        footer{
+            background:#0a3d62;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
 <div class="container">
-<nav>
+<nav> 
 
-<img src="C:\Users\acer\Desktop\tnpsc_exam_system\images\images\logo.png" alt="TNPSC Logo" width="120">
+<img src="images/images/logo.png" alt="TNPSC Logo" width="120">
 
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="login.html">Login</a></li>
 <li><a href="register.html">Register</a></li>
-<li><a href="#">Mock Test</a></li>
+<li><a href="exam.html">Mock Test</a></li>
 <li><a href="#">About</a></li>
 </ul>
 
@@ -82,7 +189,6 @@
 
 </footer>
 
-<script src="js/script.js"></script>
 
 </body>
 </html>
