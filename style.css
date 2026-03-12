@@ -1,10 +1,41 @@
-body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f4f4f4; }
-.form-container, #examContainer { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-.hidden { display: none; }
-input { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
-button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-button:hover { background: #0056b3; }
-#timer { font-size: 24px; font-weight: bold; color: #dc3545; margin-bottom: 20px; }
-.question { margin: 20px 0; padding: 15px; background: #e9ecef; border-radius: 5px; }
-.options label { display: block; margin: 5px 0; }
-#result { margin-top: 20px; font-size: 18px; padding: 20px; }
+body{
+font-family: Arial;
+background:#f4f6fb;
+text-align:center;
+}
+
+.container{
+margin-top:100px;
+}
+
+h1{
+color:#2c3e50;
+}
+
+button{
+padding:12px 20px;
+background:#4CAF50;
+color:white;
+border:none;
+cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#45a049;
+}
+
+.features{
+display:flex;
+justify-content:center;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:10px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+width:200px;
+}
