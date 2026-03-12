@@ -1,7 +1,5 @@
 function login(){
 
-alert("Login successful!");
-
-window.location.href="dashboard.html";
+alert("Login Successful!");
 
 }
