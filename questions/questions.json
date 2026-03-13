@@ -1,0 +1,19 @@
+[
+{
+"question": "Who is the Chief Minister of Tamil Nadu?",
+"options": ["M.K. Stalin","Narendra Modi","Rahul Gandhi","Amit Shah"],
+"answer": "M.K. Stalin"
+},
+
+{
+"question": "Which is the longest river in India?",
+"options": ["Ganga","Yamuna","Godavari","Kaveri"],
+"answer": "Ganga"
+},
+
+{
+"question": "Who is called the Father of the Nation?",
+"options": ["Mahatma Gandhi","Nehru","Ambedkar","Subash Bose"],
+"answer": "Mahatma Gandhi"
+}
+]
