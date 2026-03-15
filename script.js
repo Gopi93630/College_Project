@@ -53,3 +53,11 @@ function submitQuiz() {
     window.location.href = "result.html";
 
 }
+
+function loginUser(){
+
+    alert("Login Successful");
+
+    window.location.href = "index.html";
+
+}
