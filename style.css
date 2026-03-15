@@ -1,3 +1,109 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+
+body{
+background:#f4f6f9;
+}
+
+/* HEADER */
+
+header{
+background:#0a3d62;
+padding:15px 0;
+}
+
+/* CONTAINER */
+
+.container{
+width:90%;
+margin:auto;
+}
+
+/* NAVIGATION */
+
+nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* LOGO */
+
+nav img{
+width:120px;
+}
+
+/* MENU */
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#f6b93b;
+}
+
+/* ABOUT PAGE */
+
+.about-section{
+width:80%;
+margin:60px auto;
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-title{
+text-align:center;
+color:#0a3d62;
+margin-bottom:25px;
+font-size:34px;
+}
+
+.about-text{
+font-size:18px;
+line-height:1.8;
+color:#555;
+margin-bottom:20px;
+text-align:justify;
+}
+
+/* FEATURES */
+
+.features-box{
+margin-top:30px;
+}
+
+.features-box h2{
+color:#0a3d62;
+margin-bottom:15px;
+}
+
+.features-list{
+padding-left:20px;
+line-height:2;
+font-size:17px;
+}
+
 /* General Styles */
 
 body{
@@ -168,13 +274,13 @@ color:green;
 color:red;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer{
 background:#0a3d62;
 color:white;
 text-align:center;
-padding:10px;
+padding:15px;
 margin-top:40px;
 }
 
@@ -192,70 +298,6 @@ width:95%;
 
 .result-box{
 width:90%;
-}
-
-}
-
-/* ABOUT PAGE */
-
-.about-section{
-width:80%;
-margin:auto;
-margin-top:40px;
-background:white;
-padding:40px;
-border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-.about-title{
-text-align:center;
-color:#0a3d62;
-margin-bottom:20px;
-font-size:32px;
-}
-
-.about-text{
-font-size:18px;
-line-height:1.8;
-color:#444;
-margin-bottom:20px;
-text-align:justify;
-}
-
-/* FEATURES SECTION */
-
-.features-box{
-margin-top:30px;
-}
-
-.features-box h2{
-color:#0a3d62;
-margin-bottom:15px;
-}
-
-.features-list{
-list-style:square;
-padding-left:20px;
-line-height:1.8;
-font-size:17px;
-}
-
-/* RESPONSIVE DESIGN */
-
-@media(max-width:768px){
-
-.about-section{
-width:95%;
-padding:20px;
-}
-
-.about-title{
-font-size:24px;
-}
-
-.about-text{
-font-size:16px;
 }
 
 }
