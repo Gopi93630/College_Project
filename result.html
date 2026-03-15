@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Exam Result | TNPSC Online Examination System</title>
-
-<link rel="stylesheet" href="style.css">
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-=======
 <html>
 <head>
 
-<title>Result</title>
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
+<title>Exam Result</title>
 
 <style>
 
 body{
-background:#1e3799;
+background:#0a3d62;
 color:white;
 text-align:center;
 font-family:Arial;
 margin-top:150px;
-overflow:hidden;
+}
+
+.card{
+
+background:white;
+color:#0a3d62;
+width:400px;
+margin:auto;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+
 }
 
 .score{
+
 font-size:70px;
 font-weight:bold;
 animation:zoom 1s infinite alternate;
+
 }
 
 @keyframes zoom{
@@ -43,165 +41,30 @@ to{transform:scale(1.3);}
 
 }
 
-<<<<<<< HEAD
-.pass{
-color:green;
-font-weight:bold;
-}
-
-.fail{
-color:red;
-font-weight:bold;
-}
-
-.analysis{
-margin-top:20px;
-text-align:left;
-}
-
-.analysis ul{
-line-height:1.8;
-}
-
-canvas{
-margin-top:20px;
-}
-
-button{
-margin-top:20px;
-padding:12px 25px;
-background:#0a3d62;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
-font-size:16px;
-}
-
-button:hover{
-background:#07406b;
-}
-
-footer{
-background:#0a3d62;
-color:white;
-text-align:center;
-padding:10px;
-margin-top:50px;
-=======
-canvas{
-position:fixed;
-top:0;
-left:0;
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
-}
-
 </style>
 
 </head>
 
 <body>
 
-<h1>Your Score</h1>
+<div class="card">
 
-<<<<<<< HEAD
-<div class="container">
+<h1>Exam Result</h1>
 
-<div class="result-box">
-
-<h2>Your Exam Result</h2>
-
-<div class="score" id="scoreDisplay">
-Score: 0 / 0
-</div>
-
-<div class="status" id="statusDisplay">
-Status: Waiting
-</div>
-
-<canvas id="chart" width="400"></canvas>
-
-<div class="analysis">
-
-<h3>Performance Analysis</h3>
-
-<ul>
-<li>Strong understanding of basic general knowledge topics.</li>
-<li>Good attempt in TNPSC model questions.</li>
-<li>Need more practice in time management.</li>
-<li>Revise history, polity, and geography sections.</li>
-</ul>
-
-</div>
-
-<button onclick="goHome()">Back to Home</button>
-
-</div>
-
-</div>
-
-<footer>
-<p>© 2026 TNPSC Online Examination System</p>
-</footer>
-=======
 <div class="score" id="score"></div>
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
+
+<p>TNPSC Practice Test</p>
+
+</div>
 
 <script>
 
-let score=localStorage.getItem("score");
+let score = localStorage.getItem("score");
 
-<<<<<<< HEAD
-if(score !== null){
-
-document.getElementById("scoreDisplay").innerHTML =
-"Score: " + score + " / " + total;
-
-if(score >= total/2){
-
-document.getElementById("statusDisplay").innerHTML = "Status: PASS";
-document.getElementById("statusDisplay").classList.add("pass");
-
-}else{
-
-document.getElementById("statusDisplay").innerHTML = "Status: FAIL";
-document.getElementById("statusDisplay").classList.add("fail");
-
-}
-
-/* Chart */
-
-let ctx = document.getElementById("chart");
-
-new Chart(ctx,{
-type:'bar',
-
-data:{
-labels:["Correct","Wrong"],
-
-datasets:[{
-label:"Exam Performance",
-data:[score, total-score]
-}]
-}
-
-});
-
-}
-
-function goHome(){
-window.location.href="index.html";
-}
-=======
-document.getElementById("score").innerHTML=score+" / 10 🎉";
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
+document.getElementById("score").innerHTML =
+score + " / 10 🎉";
 
 </script>
 
 </body>
-<<<<<<< HEAD
-
 </html>
-=======
-</html>
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
