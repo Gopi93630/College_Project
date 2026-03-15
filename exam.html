@@ -1,37 +1,22 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>TNPSC Mock Test</title>
-
-<link rel="stylesheet" href="style.css">
-
-=======
 <html>
 <head>
 
-<title>TNPSC Mock Test</title>
+<title>TNPSC Quiz</title>
 
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
 <style>
 
 body{
 font-family:Arial;
-background:#eef2f7;
+background:#ecf0f1;
 margin:0;
 }
 
 header{
-background:#1e3799;
+background:#0a3d62;
 color:white;
 padding:15px;
-display:flex;
-justify-content:space-between;
+text-align:center;
 }
 
 .container{
@@ -40,17 +25,17 @@ margin:auto;
 margin-top:30px;
 }
 
-.question-box{
+.question{
 background:white;
 padding:20px;
 margin-bottom:20px;
-border-radius:8px;
+border-radius:10px;
 box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
 button{
-padding:12px 25px;
-background:#1e3799;
+padding:12px 30px;
+background:#0a3d62;
 color:white;
 border:none;
 border-radius:6px;
@@ -59,13 +44,7 @@ font-size:16px;
 }
 
 button:hover{
-background:#0c2461;
-}
-
-.timer{
-color:red;
-font-size:18px;
-font-weight:bold;
+background:#07406b;
 }
 
 </style>
@@ -76,245 +55,200 @@ font-weight:bold;
 
 <header>
 
-<<<<<<< HEAD
-<h2>
-<img src="images/icons/exam.png" width="25">
-TNPSC Mock Test
-</h2>
-
-<h3>Time Remaining: <span id="timer">01:00</span></h3>
-=======
-<h2>TNPSC Mock Test</h2>
-
-<div class="timer">
-Time Left : <span id="time">120</span>
-</div>
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
+<h2 id="title"></h2>
 
 </header>
-
 
 <div class="container">
 
 <form id="quizForm">
 
-<<<<<<< HEAD
-<div class="question-box">
-<p>1. Who is the Chief Minister of Tamil Nadu?</p>
+<div id="questions"></div>
 
-<div class="options">
-<label><input type="radio" name="q1" value="0"> Narendra Modi</label>
-<label><input type="radio" name="q1" value="1"> M.K. Stalin</label>
-<label><input type="radio" name="q1" value="0"> Rahul Gandhi</label>
-<label><input type="radio" name="q1" value="0"> Amit Shah</label>
-</div>
-
-</div>
-=======
-<!-- Question 1 -->
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
-
-<div class="question-box">
-
-<p>1. Capital of Tamil Nadu?</p>
-
-<label><input type="radio" name="q1" value="1"> Chennai</label>
-<label><input type="radio" name="q1" value="0"> Madurai</label>
-<label><input type="radio" name="q1" value="0"> Salem</label>
-<label><input type="radio" name="q1" value="0"> Trichy</label>
-
-</div>
-
-<<<<<<< HEAD
-=======
-<!-- Question 2 -->
-
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
-<div class="question-box">
-
-<p>2. Father of Nation?</p>
-
-<label><input type="radio" name="q2" value="1"> Mahatma Gandhi</label>
-<label><input type="radio" name="q2" value="0"> Nehru</label>
-<label><input type="radio" name="q2" value="0"> Ambedkar</label>
-<label><input type="radio" name="q2" value="0"> Bose</label>
-
-</div>
-
-<!-- Question 3 -->
-
-<div class="question-box">
-
-<p>3. National Animal of India?</p>
-
-<label><input type="radio" name="q3" value="1"> Tiger</label>
-<label><input type="radio" name="q3" value="0"> Lion</label>
-<label><input type="radio" name="q3" value="0"> Elephant</label>
-<label><input type="radio" name="q3" value="0"> Deer</label>
-
-</div>
-
-<!-- Question 4 -->
-
-<div class="question-box">
-
-<p>4. National Bird of India?</p>
-
-<label><input type="radio" name="q4" value="1"> Peacock</label>
-<label><input type="radio" name="q4" value="0"> Crow</label>
-<label><input type="radio" name="q4" value="0"> Parrot</label>
-<label><input type="radio" name="q4" value="0"> Swan</label>
-
-</div>
-
-<!-- Question 5 -->
-
-<div class="question-box">
-
-<p>5. Who wrote Thirukkural?</p>
-
-<label><input type="radio" name="q5" value="1"> Thiruvalluvar</label>
-<label><input type="radio" name="q5" value="0"> Bharathi</label>
-<label><input type="radio" name="q5" value="0"> Kambar</label>
-<label><input type="radio" name="q5" value="0"> Avvaiyar</label>
-
-</div>
-
-<!-- Question 6 -->
-
-<div class="question-box">
-
-<p>6. Tamil Nadu State Animal?</p>
-
-<label><input type="radio" name="q6" value="1"> Nilgiri Tahr</label>
-<label><input type="radio" name="q6" value="0"> Tiger</label>
-<label><input type="radio" name="q6" value="0"> Elephant</label>
-<label><input type="radio" name="q6" value="0"> Deer</label>
-
-</div>
-
-<!-- Question 7 -->
-
-<div class="question-box">
-
-<p>7. Longest river in India?</p>
-
-<label><input type="radio" name="q7" value="1"> Ganga</label>
-<label><input type="radio" name="q7" value="0"> Yamuna</label>
-<label><input type="radio" name="q7" value="0"> Kaveri</label>
-<label><input type="radio" name="q7" value="0"> Godavari</label>
-
-</div>
-
-<!-- Question 8 -->
-
-<div class="question-box">
-
-<p>8. First President of India?</p>
-
-<label><input type="radio" name="q8" value="1"> Rajendra Prasad</label>
-<label><input type="radio" name="q8" value="0"> Abdul Kalam</label>
-<label><input type="radio" name="q8" value="0"> Nehru</label>
-<label><input type="radio" name="q8" value="0"> Ambedkar</label>
-
-</div>
-
-<!-- Question 9 -->
-
-<div class="question-box">
-
-<p>9. Constitution implemented year?</p>
-
-<label><input type="radio" name="q9" value="1"> 1950</label>
-<label><input type="radio" name="q9" value="0"> 1947</label>
-<label><input type="radio" name="q9" value="0"> 1945</label>
-<label><input type="radio" name="q9" value="0"> 1952</label>
-
-</div>
-
-<!-- Question 10 -->
-
-<div class="question-box">
-
-<p>10. Current Chief Minister of Tamil Nadu?</p>
-
-<label><input type="radio" name="q10" value="1"> M.K Stalin</label>
-<label><input type="radio" name="q10" value="0"> Narendra Modi</label>
-<label><input type="radio" name="q10" value="0"> Rahul Gandhi</label>
-<label><input type="radio" name="q10" value="0"> Amit Shah</label>
-
-</div>
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
 <button type="button" onclick="submitQuiz()">Submit Test</button>
 
 </form>
 
 </div>
 
+
 <script>
 
-<<<<<<< HEAD
-let timeLeft = 60;
+let topic = localStorage.getItem("topic");
 
-let timer = setInterval(function(){
+document.getElementById("title").innerHTML =
+topic.toUpperCase() + " QUIZ";
 
-let minutes = Math.floor(timeLeft / 60);
-let seconds = timeLeft % 60;
+let questionBank = {
 
-seconds = seconds < 10 ? "0" + seconds : seconds;
+tamil:[
 
-document.getElementById("timer").textContent = minutes + ":" + seconds;
+{
+q:"திருக்குறள் மொத்தம் எத்தனை குறள்களை கொண்டது?",
+o:["1200","1330","1400","1500"],
+a:1
+},
 
-timeLeft--;
+{
+q:"சிலப்பதிகாரம் எந்த இலக்கிய வகையைச் சேர்ந்தது?",
+o:["நூல்","காப்பியம்","கவிதை","பாடல்"],
+a:1
+},
 
-if(timeLeft < 0){
+{
+q:"பாரதியார் பிறந்த இடம்?",
+o:["சென்னை","எட்டயபுரம்","மதுரை","திருச்சி"],
+a:1
+},
 
-clearInterval(timer);
-submitQuiz();
+{
+q:"தமிழ் இலக்கியத்தில் சங்க காலம் எத்தனை?",
+o:["2","3","4","5"],
+a:1
+},
 
+{
+q:"தொல்காப்பியம் எந்த வகை நூல்?",
+o:["இலக்கணம்","கவிதை","காப்பியம்","புராணம்"],
+a:0
+},
+
+{
+q:"திருவள்ளுவர் எழுதிய நூல்?",
+o:["சிலப்பதிகாரம்","திருக்குறள்","மணிமேகலை","கம்பராமாயணம்"],
+a:1
+},
+
+{
+q:"கம்பராமாயணம் எழுதியவர்?",
+o:["கம்பர்","பாரதி","அவ்வையார்","இளங்கோ"],
+a:0
+},
+
+{
+q:"மணிமேகலை எழுதியவர்?",
+o:["சாத்தனார்","கம்பர்","திருவள்ளுவர்","பாரதி"],
+a:0
+},
+
+{
+q:"தமிழ் மொழி எந்த மொழிக்குடும்பம்?",
+o:["திராவிட","இந்தோ","ஆஸ்ட்ரிக்","சீன"],
+a:0
+},
+
+{
+q:"புறநானூறு எந்த இலக்கியம்?",
+o:["சங்க","பக்தி","நூல்","காப்பியம்"],
+a:0
 }
 
-},1000);
+],
+
+maths:[
+
+{
+q:"25² = ?",
+o:["500","625","725","575"],
+a:1
+},
+
+{
+q:"144 இன் வர்க்கமூலம்?",
+o:["10","11","12","14"],
+a:2
+},
+
+{
+q:"15 × 12 = ?",
+o:["150","170","180","190"],
+a:2
+},
+
+{
+q:"100 ÷ 5 = ?",
+o:["10","15","20","25"],
+a:2
+},
+
+{
+q:"12 + 18 = ?",
+o:["28","30","32","36"],
+a:1
+},
+
+{
+q:"9 × 9 = ?",
+o:["72","81","91","99"],
+a:1
+},
+
+{
+q:"20 − 7 = ?",
+o:["11","12","13","14"],
+a:2
+},
+
+{
+q:"7 × 8 = ?",
+o:["54","56","58","60"],
+a:1
+},
+
+{
+q:"50 ÷ 10 = ?",
+o:["3","4","5","6"],
+a:2
+},
+
+{
+q:"100 + 200 = ?",
+o:["200","250","300","350"],
+a:2
+}
+
+]
+
+};
+
+
+let questions = questionBank[topic];
+
+let html="";
+
+for(let i=0;i<questions.length;i++){
+
+html+=`
+<div class="question">
+
+<p>${i+1}. ${questions[i].q}</p>
+
+<label><input type="radio" name="q${i}" value="0"> ${questions[i].o[0]}</label><br>
+<label><input type="radio" name="q${i}" value="1"> ${questions[i].o[1]}</label><br>
+<label><input type="radio" name="q${i}" value="2"> ${questions[i].o[2]}</label><br>
+<label><input type="radio" name="q${i}" value="3"> ${questions[i].o[3]}</label>
+
+</div>
+`;
+}
+
+document.getElementById("questions").innerHTML=html;
 
 
 
-=======
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
 function submitQuiz(){
 
 let score=0;
 
-<<<<<<< HEAD
-let score = 0;
+for(let i=0;i<questions.length;i++){
 
-let form = document.forms["quizForm"];
-
-let answers = ["q1","q2","q3"];
-
-for(let i=0;i<answers.length;i++){
-
-let q = form[answers[i]];
-=======
-let answers=["q1","q2","q3","q4","q5","q6","q7","q8","q9","q10"];
-
-for(let i=0;i<answers.length;i++){
-
-let q=document.getElementsByName(answers[i]);
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
+let q=document.getElementsByName("q"+i);
 
 for(let j=0;j<q.length;j++){
 
-if(q[j].checked){
+if(q[j].checked && q[j].value==questions[i].a){
 
-<<<<<<< HEAD
-score += Number(q[j].value);
-=======
-score+=Number(q[j].value);
->>>>>>> 493d0b849f67ca181b6a49c73527fd14fd36bee9
+score++;
 
 }
 
@@ -324,20 +258,7 @@ score+=Number(q[j].value);
 
 localStorage.setItem("score",score);
 
-window.location.href="result.html";
-
-/* Save score for result page */
-
-localStorage.setItem("score",score);
-localStorage.setItem("total",3);
-
-/* Redirect to result page */
-
-setTimeout(function(){
-
-window.location.href="result.html";
-
-},2000);
+window.location="result.html";
 
 }
 
