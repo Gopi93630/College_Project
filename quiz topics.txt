@@ -1,14 +1,15 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
-<title>TNPSC Online Mock Test</title>
+<title>TNPSC Mock Test Portal</title>
 
 <style>
 
 body{
-font-family:Arial;
 margin:0;
-background:linear-gradient(120deg,#0a3d62,#3c6382);
+font-family:Arial;
+background:linear-gradient(120deg,#1e3c72,#2a5298);
 color:white;
 text-align:center;
 }
@@ -18,66 +19,73 @@ margin-top:40px;
 }
 
 .container{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:20px;
 width:85%;
 margin:auto;
 margin-top:50px;
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
 }
 
 .topic{
 background:white;
-color:#0a3d62;
+color:#1e3c72;
 padding:30px;
 border-radius:12px;
-font-size:18px;
 font-weight:bold;
+font-size:18px;
 cursor:pointer;
-box-shadow:0 6px 20px rgba(0,0,0,0.2);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
 transition:0.3s;
 }
 
 .topic:hover{
-transform:scale(1.1);
+transform:scale(1.08);
 background:#f1f2f6;
 }
 
-</style>
+footer{
+margin-top:60px;
+opacity:0.8;
+}
 
+</style>
 </head>
 
 <body>
 
-<h1>TNPSC Online Mock Test Portal</h1>
-<p>Select a Topic</p>
+<h1>TNPSC Online Practice Test</h1>
+<p>Select a Subject</p>
 
 <div class="container">
 
-<div class="topic" onclick="startQuiz('tamil')">Tamil</div>
-<div class="topic" onclick="startQuiz('english')">English</div>
-<div class="topic" onclick="startQuiz('maths')">Mathematics</div>
-<div class="topic" onclick="startQuiz('gk')">General Knowledge</div>
-<div class="topic" onclick="startQuiz('science')">Science</div>
+<div class="topic" onclick="openQuiz('tamil')">Tamil</div>
+<div class="topic" onclick="openQuiz('english')">English</div>
+<div class="topic" onclick="openQuiz('maths')">Mathematics</div>
+<div class="topic" onclick="openQuiz('gk')">General Knowledge</div>
+<div class="topic" onclick="openQuiz('science')">Science</div>
 
-<div class="topic" onclick="startQuiz('history')">History</div>
-<div class="topic" onclick="startQuiz('geography')">Geography</div>
-<div class="topic" onclick="startQuiz('polity')">Polity</div>
-<div class="topic" onclick="startQuiz('economy')">Economy</div>
-<div class="topic" onclick="startQuiz('sports')">Sports</div>
+<div class="topic" onclick="openQuiz('history')">History</div>
+<div class="topic" onclick="openQuiz('geography')">Geography</div>
+<div class="topic" onclick="openQuiz('polity')">Polity</div>
+<div class="topic" onclick="openQuiz('economy')">Economy</div>
+<div class="topic" onclick="openQuiz('sports')">Sports</div>
 
 </div>
 
+<footer>
+<p>TNPSC Practice Portal</p>
+</footer>
+
 <script>
 
-function startQuiz(topic){
-
-localStorage.setItem("topic",topic);
-window.location="quiz.html";
-
+function openQuiz(topic){
+localStorage.setItem("topic",topic)
+window.location="quiz.html"
 }
 
 </script>
 
 </body>
 </html>
+```
