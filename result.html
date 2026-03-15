@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Exam Result | TNPSC Online Examination System</title>
+
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <style>
 
 body{
@@ -70,6 +76,10 @@ text-align:left;
 line-height:1.8;
 }
 
+canvas{
+margin-top:20px;
+}
+
 button{
 margin-top:20px;
 padding:12px 25px;
@@ -113,12 +123,14 @@ Exam Result
 <h2>Your Exam Result</h2>
 
 <div class="score" id="scoreDisplay">
-Score: 0 / 3
+Score: 0 / 0
 </div>
 
 <div class="status" id="statusDisplay">
 Status: Waiting
 </div>
+
+<canvas id="chart" width="400"></canvas>
 
 <div class="analysis">
 
@@ -154,22 +166,43 @@ document.getElementById("scoreDisplay").innerHTML =
 "Score: " + score + " / " + total;
 
 if(score >= total/2){
-document.getElementById("statusDisplay").innerHTML =
-"Status: PASS";
+
+document.getElementById("statusDisplay").innerHTML = "Status: PASS";
 document.getElementById("statusDisplay").classList.add("pass");
+
 }else{
-document.getElementById("statusDisplay").innerHTML =
-"Status: FAIL";
+
+document.getElementById("statusDisplay").innerHTML = "Status: FAIL";
 document.getElementById("statusDisplay").classList.add("fail");
+
 }
+
+/* Chart */
+
+let ctx = document.getElementById("chart");
+
+new Chart(ctx,{
+type:'bar',
+
+data:{
+labels:["Correct","Wrong"],
+
+datasets:[{
+label:"Exam Performance",
+data:[score, total-score]
+}]
+}
+
+});
 
 }
 
 function goHome(){
-window.location.href = "index.html";
+window.location.href="index.html";
 }
 
 </script>
 
 </body>
+
 </html>

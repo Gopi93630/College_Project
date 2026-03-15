@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Login | TNPSC Online Examination System</title>
+
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+
 <style>
 
 body{
@@ -151,19 +155,19 @@ User Login
 
 <h2>User Login</h2>
 
-<form action="exam.html" method="post">
+<form id="loginForm">
 
 <div class="input-group">
 <label>Email</label>
-<input type="email" placeholder="Enter your email" required>
+<input type="email" id="email" placeholder="Enter your email" required>
 </div>
 
 <div class="input-group">
 <label>Password</label>
-<input type="password" placeholder="Enter your password" required>
+<input type="password" id="password" placeholder="Enter your password" required>
 </div>
 
-<button onclick="loginUser()">Login</button>
+<button type="button" class="btn" onclick="loginUser()">Login</button>
 
 </form>
 
@@ -181,5 +185,31 @@ User Login
 
 </footer>
 
+<script>
+
+function loginUser(){
+
+let email = document.getElementById("email").value;
+let password = document.getElementById("password").value;
+
+if(email === "" || password === ""){
+
+alert("Please enter email and password");
+
+return;
+
+}
+
+/* simple login success */
+
+alert("Login Successful!");
+
+window.location.href="exam.html";
+
+}
+
+</script>
+
 </body>
+
 </html>

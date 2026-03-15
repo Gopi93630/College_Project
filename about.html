@@ -7,10 +7,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>About TNPSC Online Examination System</title>
+
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+
 <style>
+
 /* ABOUT PAGE */
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+}
+
+/* HEADER */
+
+header{
+background:#0a3d62;
+padding:15px 0;
+}
+
+.container{
+width:90%;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#fbc531;
+}
+
+/* ABOUT SECTION */
+
 .about-section{
 width:80%;
 margin:auto;
@@ -36,7 +81,23 @@ margin-bottom:20px;
 text-align:justify;
 }
 
-/* FEATURES SECTION */
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#fbc531;
+color:black;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#e1a800;
+}
+
+/* FEATURES */
 
 .features-box{
 margin-top:30px;
@@ -54,7 +115,17 @@ line-height:1.8;
 font-size:17px;
 }
 
-/* RESPONSIVE DESIGN */
+/* FOOTER */
+
+footer{
+background:#0a3d62;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:50px;
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
 
@@ -72,7 +143,9 @@ font-size:16px;
 }
 
 }
+
 </style>
+
 </head>
 
 <body>
@@ -80,9 +153,11 @@ font-size:16px;
 <header>
 
 <div class="container">
+
 <nav>
 
-<img src="images\icons\about.png" alt="TNPSC Logo">
+<img src="images/icons/about.png" width="40">
+
 <ul>
 <li><a href="about.html">About</a></li>
 <li><a href="login.html">Login</a></li>
@@ -104,7 +179,7 @@ About TNPSC Online Examination System
 </h1>
 
 <p class="about-text">
-The TNPSC Online Examination System is a web-based platform designed to help students prepare for competitive exams conducted by Tamil Nadu Public Service Commission. The system provides mock tests, subject-wise questions, and instant result analysis.
+The TNPSC Online Examination System is a web-based platform designed to help students prepare for competitive exams conducted by the Tamil Nadu Public Service Commission. The system provides mock tests, subject-wise questions, and instant result analysis.
 </p>
 
 <p class="about-text">
@@ -130,6 +205,7 @@ This platform helps aspirants improve their knowledge, time management skills, a
 </div>
 
 </section>
+
 <footer>
 
 <p>
@@ -137,5 +213,6 @@ This platform helps aspirants improve their knowledge, time management skills, a
 </p>
 
 </footer>
+
 </body>
 </html>

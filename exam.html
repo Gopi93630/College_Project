@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>TNPSC Mock Test</title>
+
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+
 <style>
 
 body{
@@ -25,13 +29,6 @@ text-align:center;
 width:80%;
 margin:auto;
 margin-top:30px;
-}
-
-.timer{
-float:right;
-font-size:18px;
-font-weight:bold;
-color:red;
 }
 
 .question-box{
@@ -78,11 +75,14 @@ margin-top:20px;
 <body>
 
 <header>
+
 <h2>
 <img src="images/icons/exam.png" width="25">
 TNPSC Mock Test
 </h2>
-<div class="timer">Time Left: <span id="time">60</span> sec</div>
+
+<h3>Time Remaining: <span id="timer">01:00</span></h3>
+
 </header>
 
 <div class="container">
@@ -101,7 +101,6 @@ TNPSC Mock Test
 
 </div>
 
-
 <div class="question-box">
 <p>2. Which river is the longest in India?</p>
 
@@ -113,7 +112,6 @@ TNPSC Mock Test
 </div>
 
 </div>
-
 
 <div class="question-box">
 <p>3. Who is known as the Father of the Nation in India?</p>
@@ -127,8 +125,7 @@ TNPSC Mock Test
 
 </div>
 
-
-<button onclick="submitQuiz()">Submit Test</button>
+<button type="button" onclick="submitQuiz()">Submit Test</button>
 
 </form>
 
@@ -136,21 +133,30 @@ TNPSC Mock Test
 
 </div>
 
-
 <script>
 
 let timeLeft = 60;
+
 let timer = setInterval(function(){
 
-timeLeft--;
-document.getElementById("time").textContent = timeLeft;
+let minutes = Math.floor(timeLeft / 60);
+let seconds = timeLeft % 60;
 
-if(timeLeft <= 0){
+seconds = seconds < 10 ? "0" + seconds : seconds;
+
+document.getElementById("timer").textContent = minutes + ":" + seconds;
+
+timeLeft--;
+
+if(timeLeft < 0){
+
 clearInterval(timer);
 submitQuiz();
+
 }
 
 },1000);
+
 
 
 function submitQuiz(){
@@ -158,6 +164,7 @@ function submitQuiz(){
 clearInterval(timer);
 
 let score = 0;
+
 let form = document.forms["quizForm"];
 
 let answers = ["q1","q2","q3"];
@@ -165,10 +172,13 @@ let answers = ["q1","q2","q3"];
 for(let i=0;i<answers.length;i++){
 
 let q = form[answers[i]];
+
 for(let j=0;j<q.length;j++){
 
 if(q[j].checked){
+
 score += Number(q[j].value);
+
 }
 
 }
@@ -178,10 +188,22 @@ score += Number(q[j].value);
 document.getElementById("result").innerHTML =
 "Your Score: " + score + " / 3";
 
+/* Save score for result page */
+
+localStorage.setItem("score",score);
+localStorage.setItem("total",3);
+
+/* Redirect to result page */
+
+setTimeout(function(){
+
+window.location.href="result.html";
+
+},2000);
+
 }
 
 </script>
-
 
 </body>
 </html>

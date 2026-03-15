@@ -1,127 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNPSC Exam Portal</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, Helvetica, sans-serif;
-            background:#f4f6f9;
-        }
 
-        header{
-            background:#0a3d62;
-            color:white;
-            padding:15px 0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .container{
-            width:90%;
-            margin:auto;
-        }
+<title>TNPSC Exam Portal</title>
 
-        nav{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
+<link rel="stylesheet" href="style.css">
 
-        nav ul{
-            list-style:none;
-            display:flex;
-            gap:20px;
-        }
+<style>
 
-        nav ul li a{
-            color:white;
-            text-decoration:none;
-            font-weight:bold;
-        }
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+}
 
-        nav ul li a:hover{
-            color:#fbc531;
-        }
+/* HEADER */
 
-        .hero{
-            background-image:url("images/images/background.jpg");
-            background-size:cover;
-            background-position:center;
-            height:400px;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            color:white;
-        }
+header{
+background:#0a3d62;
+color:white;
+padding:15px 0;
+}
 
-        .hero h1{
-            font-size:40px;
-        }
+.container{
+width:90%;
+margin:auto;
+}
 
-        .hero p{
-            font-size:18px;
-            margin-top:10px;
-        }
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-        .btn{
-            display:inline-block;
-            margin-top:20px;
-            padding:12px 25px;
-            background:#fbc531;
-            color:black;
-            text-decoration:none;
-            border-radius:5px;
-            font-weight:bold;
-        }
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
 
-        .btn:hover{
-            background:#e1a800;
-        }
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
 
-        .features{
-            padding:50px 0;
-            background:white;
-        }
+nav ul li a:hover{
+color:#fbc531;
+}
 
-        .feature-grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:30px;
-        }
+/* DASHBOARD */
 
-        .card{
-            background:#f4f6f9;
-            padding:25px;
-            border-radius:8px;
-            text-align:center;
-            box-shadow:0 2px 8px rgba(0,0,0,0.1);
-        }
+.dashboard{
+text-align:center;
+padding:50px 20px;
+}
 
-        .card h3{
-            color:#0a3d62;
-        }
+.title{
+font-size:36px;
+color:#0a3d62;
+margin-bottom:40px;
+}
 
-        footer{
-            background:#0a3d62;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:30px;
-        }
-    </style>
+.dashboard-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+width:80%;
+margin:auto;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.box h2{
+color:#0a3d62;
+}
+
+.start-btn{
+display:inline-block;
+margin-top:40px;
+padding:14px 30px;
+background:#fbc531;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+font-size:18px;
+}
+
+.start-btn:hover{
+background:#e1a800;
+}
+
+/* FOOTER */
+
+footer{
+background:#0a3d62;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-<div class="container">
-<nav> 
 
-<img src="images\images\logo.png" alt="TNPSC Logo" width="120">
+<div class="container">
+
+<nav>
+
+<img src="images/images/logo.png" alt="TNPSC Logo" width="120">
 
 <ul>
 <li><a href="about.html">About</a></li>
@@ -132,57 +134,42 @@
 </ul>
 
 </nav>
+
 </div>
+
 </header>
 
+<section class="dashboard">
 
-<section class="hero">
+<h1 class="title">TNPSC Preparation Dashboard</h1>
 
-<div>
-<h1>TNPSC Online Examination System</h1>
-<p>Practice Mock Tests and Improve Your TNPSC Exam Preparation</p>
+<div class="dashboard-grid">
 
-<a href="exam.html" class="btn">Start Mock Test</a>
+<div class="box">
+<h2>Mock Tests</h2>
+<p>Practice TNPSC questions</p>
+</div>
+
+<div class="box">
+<h2>Questions</h2>
+<p>50+ Practice Questions</p>
+</div>
+
+<div class="box">
+<h2>Timer Based Exam</h2>
+<p>Improve speed</p>
+</div>
+
+<div class="box">
+<h2>Instant Result</h2>
+<p>Check performance</p>
+</div>
 
 </div>
+
+<a href="exam.html" class="start-btn">Start Mock Test</a>
 
 </section>
-
-
-<section class="features">
-
-<div class="container">
-
-<h2 style="text-align:center;margin-bottom:40px;">Platform Features</h2>
-
-<div class="feature-grid">
-
-<div class="card">
-<h3>Mock Tests</h3>
-<p>Practice TNPSC model questions with online mock examinations.</p>
-</div>
-
-<div class="card">
-<h3>Instant Results</h3>
-<p>Get your score immediately after completing the test.</p>
-</div>
-
-<div class="card">
-<h3>Subject-wise Practice</h3>
-<p>Prepare for History, Geography, Polity, and Aptitude topics.</p>
-</div>
-
-<div class="card">
-<h3>Time Management</h3>
-<p>Improve speed and accuracy with timed examinations.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
 
 <footer>
 
@@ -191,4 +178,5 @@
 </footer>
 
 </body>
+
 </html>
